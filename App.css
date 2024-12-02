@@ -1,0 +1,115 @@
+/* Estilo base */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.calculator {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
+.dark .calculator {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+.display {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.input {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.result {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.dark .result {
+  color: #bbb;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 1rem;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+  background: #ccc;
+}
+
+button:active {
+  background: #bbb;
+}
+
+.dark button {
+  background: #333;
+  color: #fff;
+}
+
+.dark button:hover {
+  background: #444;
+}
+
+.toggle-mode {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.toggle-mode:hover {
+  background: #0056b3;
+}
+
+.dark .toggle-mode {
+  background: #ff9800;
+  color: #000;
+}
+
+.dark .toggle-mode:hover {
+  background: #e68a00;
+}
+/* Estilo base para a página */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Cor de fundo padrão (modo claro) */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Alterar fundo no modo noturno */
+.App.dark body {
+  background-color: #121212; /* Cor de fundo para o modo noturno */
+  color: #ffffff; /* Cor do texto no modo noturno */
+}
